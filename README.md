@@ -44,8 +44,8 @@ arguments:
 HOOK="<hookprogram> [<arg> ...]"
 ```
 
-This facilitates easy invocation of the of the shell, as in this `Dockerfile`
-snippet:
+This facilitates easy invocation of individual programs and of the shell, as in
+this `Dockerfile` snippet:
 
 ```
 ENV PRESTART  /bin/sh -c echo "Performing pre-run setup..." && sleep 2s && echo "done"
