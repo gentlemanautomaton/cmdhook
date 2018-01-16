@@ -4,6 +4,8 @@
 
 FROM golang:latest as builder
 
+RUN go get -u github.com/gentlemanautomaton/cmdline
+
 WORKDIR /go/src/github.com/gentlemanautomaton/cmdhook
 
 COPY . .
