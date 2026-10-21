@@ -2,7 +2,7 @@
 # Stage 1: Retrieve and compile cmdhook
 # --------
 
-FROM golang:1.27-alpine as builder
+FROM golang:1.27-alpine AS builder
 
 RUN apk --no-cache add git
 
